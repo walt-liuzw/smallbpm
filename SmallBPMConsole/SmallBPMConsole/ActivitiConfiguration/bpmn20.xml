@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+             xmlns:activiti="http://activiti.org/bpmn" 
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" 
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" 
+             xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" 
+             typeLanguage="http://www.w3.org/2001/XMLSchema" 
+             expressionLanguage="http://www.w3.org/1999/XPath" 
+             targetNamespace="http://www.activiti.org/processdef">
+  <process id="process" isExecutable="true">
+    <startEvent id="start" />
+    <endEvent id="end" />
+
+    <userTask id="userTask1" name="起草合同" activiti:assignee="admin" />
+    <userTask id="userTask2" name="律师1" activiti:assignee="admin" />
+    <userTask id="userTask3" name="律师2" activiti:assignee="admin" />
+    <userTask id="userTask4" name="法律顾问" activiti:assignee="admin" />
+    <userTask id="userTask5" name="律师代表团" activiti:assignee="admin" />
+    <userTask id="userTask6" name="签订合同" activiti:assignee="admin" />
+
+    
+    <inclusiveGateway id="inclusivegateway1" />
+    <inclusiveGateway id="inclusivegateway2" />
+    <inclusiveGateway id="inclusivegateway3" />
+
+    <sequenceFlow id="flow1" sourceRef="start" targetRef="userTask1" />
+    <sequenceFlow id="flow2" sourceRef="userTask1" targetRef="inclusivegateway1" />
+    <sequenceFlow id="flow3" sourceRef="inclusivegateway2" targetRef="userTask4" />
+    <sequenceFlow id="flow4" sourceRef="userTask4" targetRef="inclusivegateway3" />
+    <sequenceFlow id="flow5" sourceRef="inclusivegateway3" targetRef="userTask6" />
+    <sequenceFlow id="flow6" sourceRef="userTask6" targetRef="end" />
+    <sequenceFlow id="flow7" sourceRef="userTask2" targetRef="inclusivegateway2" />
+    <sequenceFlow id="flow8" sourceRef="userTask3" targetRef="inclusivegateway2" />
+    <sequenceFlow id="flow9" sourceRef="userTask5" targetRef="inclusivegateway3" />
+    <sequenceFlow id="flow10" name="小于1000万，大于5000万" sourceRef="inclusivegateway1" targetRef="userTask2">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${money<1000||money>5000}]]></conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="flow11" name="小于1000万，大于5000万" sourceRef="inclusivegateway1" targetRef="userTask3">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${money<1000||money>5000}]]></conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="flow12" name="大于1000万" sourceRef="inclusivegateway1" targetRef="userTask5">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${money>1000}]]></conditionExpression>
+    </sequenceFlow>
+    <textAnnotation id="text">
+      <text>
+        小于1000万，律师一和律师二
+        1000-5000万，律师代表团
+        大于5000万，律师一、律师二和律师代表团
+      </text>
+    </textAnnotation>
+  </process>
+</definitions>

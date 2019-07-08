@@ -1,0 +1,12 @@
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\SmallBPMConsole\bin\Debug\netcoreapp2.1\SmallBPMConsole.deps.json
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\SmallBPMConsole\bin\Debug\netcoreapp2.1\SmallBPMConsole.runtimeconfig.json
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\SmallBPMConsole\bin\Debug\netcoreapp2.1\SmallBPMConsole.runtimeconfig.dev.json
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\SmallBPMConsole\bin\Debug\netcoreapp2.1\SmallBPMConsole.dll
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\SmallBPMConsole\bin\Debug\netcoreapp2.1\SmallBPMConsole.pdb
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\SmallBPMConsole\obj\Debug\netcoreapp2.1\SmallBPMConsole.csproj.CoreCompileInputs.cache
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\SmallBPMConsole\obj\Debug\netcoreapp2.1\SmallBPMConsole.AssemblyInfoInputs.cache
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\SmallBPMConsole\obj\Debug\netcoreapp2.1\SmallBPMConsole.AssemblyInfo.cs
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\SmallBPMConsole\obj\Debug\netcoreapp2.1\SmallBPMConsole.dll
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\SmallBPMConsole\obj\Debug\netcoreapp2.1\SmallBPMConsole.pdb
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\SmallBPMConsole\bin\Debug\netcoreapp2.1\ProcessConfigurationVPS.xml
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\SmallBPMConsole\obj\Debug\netcoreapp2.1\SmallBPMConsole.csprojAssemblyReference.cache

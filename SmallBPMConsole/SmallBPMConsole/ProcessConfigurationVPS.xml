@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<process id="WaitInStock" name="待入库流程" status="None" application="VPS">
+  <rabbitMqUri url="rabbitmq://localhost/" user="guest" password="guest"></rabbitMqUri>
+
+  <startEvent id="start"></startEvent>
+  <endEvent id="end"></endEvent>
+
+  <userTask id="waitInStock" name="创建待入库单"></userTask>
+  <userTask id="inStock" name="入库"></userTask>
+  <userTask id="warning" name="报警"></userTask>
+  <userTask id="notify" name="通知"></userTask>
+
+  <exclusiveGateway id="exclusiveGateway"></exclusiveGateway>
+
+  <sequenceFlow id="flow_waitInStock" sourceRef="start" targetRef="waitInStock" name="开始创建待入库单"></sequenceFlow>
+  <sequenceFlow id="flow_inStock" sourceRef="waitInStock" targetRef="inStock" name="创建入库单"></sequenceFlow>
+  <sequenceFlow id="flow_gateway" sourceRef="inStock" targetRef="exclusiveGateway" name="入库后判断分支">
+  </sequenceFlow>
+  <sequenceFlow id="flow_warning" sourceRef="exclusiveGateway" targetRef="warning" name="走报警分支">
+    <conditionExpression name="InStockNum" type="GE" value="300"></conditionExpression>
+  </sequenceFlow>
+  <sequenceFlow id="flow_notify1" sourceRef="exclusiveGateway" targetRef="notify" name="走通知分支">
+    <conditionExpression name ="InStockNum" type="L" value="300"></conditionExpression>
+  </sequenceFlow>
+  <sequenceFlow id="flow_notify2" sourceRef="warning" targetRef="notify" name="报警后再通知"></sequenceFlow>
+  <sequenceFlow id="flow_end" sourceRef="notify" targetRef="end" name="结束"></sequenceFlow>
+</process>

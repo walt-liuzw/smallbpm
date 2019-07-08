@@ -1,0 +1,15 @@
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\ZeebeConsole\bin\Debug\netcoreapp2.1\NLog.config
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\ZeebeConsole\bin\Debug\netcoreapp2.1\Resources\instock-process.bpmn
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\ZeebeConsole\bin\Debug\netcoreapp2.1\ZeebeConsole.deps.json
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\ZeebeConsole\bin\Debug\netcoreapp2.1\ZeebeConsole.runtimeconfig.json
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\ZeebeConsole\bin\Debug\netcoreapp2.1\ZeebeConsole.runtimeconfig.dev.json
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\ZeebeConsole\bin\Debug\netcoreapp2.1\ZeebeConsole.dll
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\ZeebeConsole\bin\Debug\netcoreapp2.1\Client.dll
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\ZeebeConsole\obj\Debug\netcoreapp2.1\ZeebeConsole.csprojAssemblyReference.cache
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\ZeebeConsole\obj\Debug\netcoreapp2.1\ZeebeConsole.csproj.CoreCompileInputs.cache
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\ZeebeConsole\obj\Debug\netcoreapp2.1\ZeebeConsole.AssemblyInfoInputs.cache
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\ZeebeConsole\obj\Debug\netcoreapp2.1\ZeebeConsole.AssemblyInfo.cs
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\ZeebeConsole\obj\Debug\netcoreapp2.1\ZeebeConsole.csproj.CopyComplete
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\ZeebeConsole\bin\Debug\netcoreapp2.1\ZeebeConsole.pdb
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\ZeebeConsole\obj\Debug\netcoreapp2.1\ZeebeConsole.dll
+E:\中瑞Demo\SmallBPM\SmallBPMConsole\ZeebeConsole\obj\Debug\netcoreapp2.1\ZeebeConsole.pdb
